@@ -10,6 +10,11 @@
 # Author:
 #   bouzuya <m@bouzuya.net>
 
+# Commands:change:
+#   hello - responds 'World!'
+
+
+
 module.exports = (robot) ->
-  robot.respond /hello/i, (msg) ->
+  robot.hear /hello/i, (msg) ->
     msg.send 'World!'
